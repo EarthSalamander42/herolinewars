@@ -12,6 +12,7 @@
 	"hlw_setting_max_amount_of_creeps_on_map_short"	"Max creeps on map per team"
 	"hlw_setting_max_creep_charges"					"Max charges per creep"
 	"hlw_setting_max_creep_charges_short"			"Max creep charges"
+	"hlw_discord_note"								"Make sure to join Discord's server to find players, suggest something or report a bug!"
 	"hlw_setting_note"								"Note: Selecting lower numbers in the 'MAX CREEPS ON MAP PER TEAM' and 'MAX CREEP CHARGES' settings will increase performance."
 
 	// Income

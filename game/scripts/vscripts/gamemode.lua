@@ -30,16 +30,6 @@ require("hlw_creeps")
 require("hlw_creep_ai")
 require("hlw_damage_filter")
 
-function GameMode:PostLoadPrecache()
-end
-
-function GameMode:OnFirstPlayerLoaded()
-	
-end
-
-function GameMode:OnAllPlayersLoaded()
-end
-
 function GameMode:OnHeroInGame(hero)
 	local playerID = hero:GetPlayerID()
 	local team = hero:GetTeamNumber()
@@ -75,7 +65,7 @@ function GameMode:OnHeroInGame(hero)
 	unit:SetControllableByPlayer(playerID, true)
 	unit:SetPlayerID(playerID)
 
-	local teams_ = {  }
+	local teams_ = {}
 	teams_[DOTA_TEAM_GOODGUYS] = "good"
 	teams_[DOTA_TEAM_BADGUYS] = "bad"
 	local spawnents = Entities:FindAllByClassname("info_player_start_" .. teams_[hero:GetTeamNumber()] .. "guys")

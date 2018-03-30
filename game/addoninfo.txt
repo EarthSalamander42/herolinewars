@@ -11,6 +11,6 @@
 
 	"hlw"
 	{
-		"MaxPlayers"		"12"
+		"MaxPlayers"		"8"
 	}
 }

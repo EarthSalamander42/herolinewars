@@ -243,7 +243,6 @@ function GameMode:InitGameMode()
 	GameMode:_InitGameMode()
 	GameMode:HInitGameMode()
 
-	GameRules:GetGameModeEntity():SetFogOfWarDisabled(true)
 	GameRules:GetGameModeEntity():SetExecuteOrderFilter( Dynamic_Wrap( GameMode, "ExecuteOrderFilter" ), GameMode )
 	GameRules:GetGameModeEntity():SetDamageFilter(Dynamic_Wrap(GameMode, "DamageFilter"), GameMode )
 

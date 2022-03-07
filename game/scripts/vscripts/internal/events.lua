@@ -19,7 +19,8 @@ function GameMode:_OnConnectFull(keys)
 		mode:SetCameraDistanceOverride(1350)
 		mode:SetBuybackEnabled(false)
 
-		mode:SetFogOfWarDisabled(false)
+		mode:SetFogOfWarDisabled(true)
+		mode:SetUnseenFogOfWarEnabled(false)
 
 --		mode:SetAnnouncerDisabled( DISABLE_ANNOUNCER )
 
@@ -27,6 +28,5 @@ function GameMode:_OnConnectFull(keys)
 --		mode:SetFountainPercentageHealthRegen( FOUNTAIN_PERCENTAGE_HEALTH_REGEN )
 --		mode:SetFountainPercentageManaRegen( FOUNTAIN_PERCENTAGE_MANA_REGEN )
 
---		mode:SetUnseenFogOfWarEnabled(USE_UNSEEN_FOG_OF_WAR)
 	end
 end

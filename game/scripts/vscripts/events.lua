@@ -114,12 +114,12 @@ end
 function GameMode:OnConnectFull(keys)
 	DebugPrint('[BAREBONES] OnConnectFull')
 	DebugPrintTable(keys)
+	DeepPrintTable(keys)
 
 	GameMode:_OnConnectFull(keys)
 
-	local entIndex = keys.index+1
 	-- The Player entity of the joining user
-	local ply = EntIndexToHScript(entIndex)
+	local ply = PlayerResource:GetPlayer(keys.PlayerID)
 
 	-- The Player ID of the joining player
 	local playerID = ply:GetPlayerID()

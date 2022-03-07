@@ -15,7 +15,7 @@
 	background-color: gradient( linear, 100% 0%, 100% 100%, from( #111111 ), color-stop( 0.01, #202327 ), color-stop( 0.2, #141619ff ), to( #000000dd ) );
 	margin-left: 70px;
 	margin-top: 20px;
-	box-shadow: black -4px -4px 8px 8px;
+	box-shadow: black 0px 0px 2px 2px;
 	flow-children: down;
 }
 
@@ -59,7 +59,7 @@
 	border-right: 1px solid #FAFAFA;
 	border-left: 1px solid #A6A6A6;
 	border-bottom: 1px solid #474747;
-	box-shadow: fill #59595988 -4px -4px 8px 9px;  
+	box-shadow: fill #59595988 0px 0px 2px 2px;  
 }
 
 .SettingOptionText
@@ -78,7 +78,7 @@
 	border-right: 1px solid #65CF6E;
 	border-left: 1px solid #4363CC;
 	border-bottom: 1px solid #2e1f21;
-	box-shadow: fill #46AB4E66 -4px -4px 8px 9px;  
+	box-shadow: fill #46AB4E66 0px 0px 1px 1px;  
 }
 
 .DiscordNote

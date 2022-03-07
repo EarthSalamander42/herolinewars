@@ -17,3 +17,4 @@
 
 # Anything that's compiled
 *.*_c
+node_modules/*

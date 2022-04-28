@@ -13,7 +13,6 @@
 *.vagrp_c
 *.vmdl_c
 *.bin
-*.png
 
 # Anything that's compiled
 *.*_c

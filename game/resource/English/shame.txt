@@ -49,7 +49,7 @@
 		"DOTA_Chat_GlyphUsedBad"							"Radiant creeps have been stunned and knocked back."
 
 		// Credit/feedback
-		"hlw_welcome_credit"	"Welcome to Hero Line Wars! Hero line was created by EquipTea using some code from EinAlex's version of Hero Line Wars."
+		"hlw_welcome_credit"	"Welcome to Hero Line Wars! Hero line was created by EquipTea using some code from EinAlex's version of Hero Line Wars. The current version is kept bug-free by EarthSalamander."
 		"hlw_welcome_feedback"	"Please post feedback on the Steam Workshop page."
 
 		// Tutorial

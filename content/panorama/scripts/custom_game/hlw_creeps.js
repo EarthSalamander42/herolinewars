@@ -43,6 +43,8 @@ function SetButtonConfig(data)
 	var childCount = contextPanel.GetChildCount();
 	var length = m_CreepPanels.length
 
+	$.Msg(m_CreepPanels);
+
 	for(var j = 0; j < length; j++)
 	{
 		var panel = m_CreepPanels.pop();

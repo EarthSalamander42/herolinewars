@@ -50,11 +50,11 @@ function GameMode:GetButtonArrayData(level)
 	
 	level = level - 1
 
-	for i = 1,10 do
+	for i = 1, 10 do
 		data.CreepImagePaths[i] = "file://{images}/custom_game/hlw_creeps/creep" .. (i + (10 * level)) .. ".png"
 		data.CreepCosts[i] = GameMode.CreepCost[(i + (10 * level))]
 	end
-	
+
 	if(level < 2) then
 		data.CreepCosts[0] = GameMode.UpgradeCost[level + 1]
 		data.CreepImagePaths[0] = "file://{images}/custom_game/hlw_creeps/upgrade1.png"
@@ -97,6 +97,8 @@ function GameMode:GetIncomeTableData()
 end
 
 function GameMode:InitializeCreepPanoramaForPlayer(PlayerID)
+	print("PlayerID:", PlayerID)
+	print("Received panorama?", GameMode.RecievedCreepPanorama)
 	GameMode.RecievedCreepPanorama[PlayerID] = false
 
 	local player = PlayerResource:GetPlayer(PlayerID)
@@ -104,19 +106,25 @@ function GameMode:InitializeCreepPanoramaForPlayer(PlayerID)
 
 	Timers:CreateTimer(0.1, function()
 		i = i + 1
+
 		if i > 50 then
 			return nil
 		end
+
 		if not player then return end
+
 		if GameMode.RecievedCreepPanorama[PlayerID] == true then
 			GameMode.RecievedCreepPanorama[PlayerID] = false
 			CustomGameEventManager:Send_ServerToPlayer(player, "UpdateButtonStatuses", GameMode:GetButtonUpdateData(PlayerID))
 			return nil
 		end
+
 		if PlayerResource:GetConnectionState(PlayerID) == DOTA_CONNECTION_STATE_DISCONNECTED then
 			return nil
 		end
+
 		CustomGameEventManager:Send_ServerToPlayer(player, "SetButtonConfig", GameMode:GetButtonArrayData(GameMode.PlayerLevels[PlayerID]))
+
 		return 1.0
 	end)
 end

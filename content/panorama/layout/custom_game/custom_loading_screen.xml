@@ -11,7 +11,7 @@
 	<Panel id="TitlePanel">   
 		<Panel id="Settings">
 			<Label class='SettingsHeader' text="SETTINGS" style="" />
-			<Label class='SettingHeader' id="Difficulty" text="#hlw_setting_creep_difficulty" style="" />
+			<Label class='SettingHeader' id="Difficulty" text="#hlw_setting_creep_difficulty" style="" html="true" />
 			<Panel id="DifficultyRow" class="SettingsRow">
 				<Panel class="SettingBox" onactivate="SetSetting('DifficultyRow', 1)"> <Label class="SettingOptionText" text="#hlw_setting_creep_difficulty_1"/> </Panel>
 				<Panel class="SettingBox" onactivate="SetSetting('DifficultyRow', 2)"> <Label class="SettingOptionText" text="#hlw_setting_creep_difficulty_2"/> </Panel>
